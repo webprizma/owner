@@ -18,7 +18,7 @@ gradle clean test -Dbrowser=FIREFOX -Dversion=98 -DremoteUrl=https://user1:1234@
 - локально:
 
 ```
-gradle clean test -Dhost=local/remote
+gradle clean test -Dhost=local
 ```
 
 - удаленно:
