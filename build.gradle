@@ -11,13 +11,17 @@ repositories {
 
 dependencies {
     testImplementation(
-            'org.junit.jupiter:junit-jupiter-api:5.8.1',
-            'org.seleniumhq.selenium:selenium-java:3.141.59',
-            'io.github.bonigarcia:webdrivermanager:5.2.1',
-            'org.aeonbits.owner:owner:1.0.4',
+            'org.junit.jupiter:junit-jupiter-api:5.9.0',
+            'org.seleniumhq.selenium:selenium-java:4.3.0',
+            'io.github.bonigarcia:webdrivermanager:5.2.2',
+            'org.aeonbits.owner:owner:1.0.12',
             'org.assertj:assertj-core:3.23.1'
     )
-    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.8.1')
+    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.9.0')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
 
 test {
